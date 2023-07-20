@@ -2,6 +2,14 @@ namespace AsyncProductAPI.Models
 {
     public class ListeningRequest
     {
-        
+        public int Id { get; set; }
+
+        public string? RequestBody {  get; set; }
+
+        public string? EstimatedCompletionTime { get; set; }
+
+        public string? RequestStatus { get; set; }
+
+        public string RequestId { get; set; } = Guid.NewGuid().ToString();
     }
 }
